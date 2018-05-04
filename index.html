@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>index</title>
+	<link rel="stylesheet" href="css/layout.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script src="js/main.js"></script>
+</head>
+<body>
+	<div class="header">
+		<div class="content clearfix">
+			<div class="header-list">
+				<a href="">
+					<img src="img/icon.png" alt="" class="header-icon">
+				</a>
+				<ul class="submenu">
+					<li><a href="javascript:void(0)">首页</a></li>
+					<li><a href="javascript:void(0)">歌单</a></li>
+					<li><a href="javascript:void(0)">推荐</a></li>
+					<li><a href="javascript:void(0)">登录</a></li>
+				</ul>
+			</div>
+
+			<div class="header-menu clearfix">
+				<div class="header-menu-items">歌单</div>
+				<div class="header-menu-items">首页</div>
+				<div class="header-menu-items">推荐</div>
+			</div>
+			<div class="header-sidemenu clearfix">
+				<button class=btn>登录/注册</button>
+			</div>
+		</div>
+	</div>
+	<div class="recommend">
+		<div class="content">
+			<h3 class="recommend-title title">推荐</h3>
+			<a href="">
+				<img src="img/recommend.jpg" alt="" class="recommend-pic">
+			</a>
+		</div>
+	</div>
+	<div class="songlist">
+		<div class="content">
+			<h3 class="songlist-title title">歌单</h3>
+			<div class="songlist-slider"></div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="content">
+			&copy; 2018 软件工程13组制作
+		</div>
+	</div>
+
+	<!--弹出层-->
+	<!--遮罩层-->
+	<div class="pop-mask"></div>
+	<!--弹出层-->
+	<div class="pop-layer">
+		<div class="pop-title">
+			<span class="active login"  >登录</span>
+			<span class="register">注册</span>
+			<img src="img/20.png" alt="" class="close">
+		</div>
+		<div class="pop-content"></div>
+		<div class="pop-icons">
+			<img src="img/xinlang.png" alt="">
+			<img src="img/weixin.png" alt="">
+			<img src="img/QQ.png" alt="">
+		</div>
+	</div>
+	<!--弹出层具体内容-->
+	<div class="pop-content-hide" style="display: none">
+		<!--登录窗体内容-->
+		<div class="login-window" >
+			<input type="text" class="input" name="account" placeholder="请输入登录邮箱/手机号">
+			<div class="erro erro-name">请输入正确的邮箱或手机号</div>
+			<input type="password" class="input" name="password" placeholder="6-16位密码，区分大小写，不能用空格">
+			<div class="erro erro-psd">请输入6-16位密码，区分大小写，不能使用空格！</div>
+			<div class="choose">
+				<input type="checkbox"><label>下次自动登录</label>
+				<a href="">忘记密码</a>
+			</div>
+			<button>登录</button>
+		</div>
+		<!--注册窗体内容-->
+		<div class="register-window">
+			<input type="text" class="input" name="account" placeholder="请输入注册邮箱/手机号">
+			<div class="erro erro-name">请输入正确的邮箱或手机号</div>
+			<div class="verify-box">
+				<input type="text" class="input verify" name="verify" placeholder="请输入验证码">
+				<img src="img/verify.png" class="verify-pic" alt="">
+			</div>
+			<div class="erro erro-verify">验证码错误</div>
+			<button>注册</button>
+		</div>
+	</div>
+</body>
+</html>
