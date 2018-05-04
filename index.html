@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-cn">
 <head>
 	<meta charset="UTF-8">
 	<title>index</title>
@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="css/style.css">
 	<script src="js/jquery-1.12.4.min.js"></script>
 	<script src="js/main.js"></script>
+	<script src="js/ui.js"></script>
 </head>
 <body>
 	<div class="header">
@@ -44,7 +45,27 @@
 	<div class="songlist">
 		<div class="content">
 			<h3 class="songlist-title title">歌单</h3>
-			<div class="songlist-slider"></div>
+			<div class="songlist-slider">
+				<div class="banner-slider ui-slider">
+					<div class="ui-slider-wrap">
+						<a href="#0" class="item"><img src="img/u8.jpg" alt="banner-1"></a>
+						<a href="#1" class="item"><img src="img/u10.jpg" alt="banner-1"></a>
+						<a href="#2" class="item"><img src="img/recommend.jpg" alt="banner-1"></a>
+					</div>
+
+					<div class="ui-slider-arrow">
+						<a href="#l" class="item left">&nbsp;</a>
+						<a href="#r" class="item right">&nbsp;</a>
+					</div>
+
+					<div class="ui-slider-process">
+						<a href="#0" class="item item_focus">&nbsp;</a>
+						<a href="#1" class="item item">&nbsp;</a>
+						<a href="#2" class="item item">&nbsp;</a>
+					</div>
+
+				</div>
+			</div>
 		</div>
 	</div>
 	<div class="footer">
